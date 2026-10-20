@@ -20,6 +20,9 @@ public void addFoodRequest(FoodRequest request) {
 public FoodRequest processFoodRequest() {
     return foodQueue.dequeue();
 }
+public boolean removeOrder(int orderId) {
+    return orderList.removeOrder(orderId);
+}
 
 public void addCompletedOrder(CompletedOrderRecord record) {
     completedOrderStack.push(record);
@@ -42,6 +45,9 @@ public void displayCompletedOrders() {
 
 public int getOrderCount() {
     return orderList.size();
+}
+public Order[] getActiveOrders() {
+    return orderList.toArray();
 }
 
 public int getFoodRequestCount() {

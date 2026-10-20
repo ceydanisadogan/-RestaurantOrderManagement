@@ -79,7 +79,19 @@ public class OrderList {
             current = current.next;
         }
     }
+public Order[] toArray() {
+    Order[] orders = new Order[size];
+    OrderNode current = head;
+    int index = 0;
 
+    while (current != null) {
+        orders[index] = current.order;
+        current = current.next;
+        index++;
+    }
+
+    return orders;
+}
     public int size() {
         return size;
     }

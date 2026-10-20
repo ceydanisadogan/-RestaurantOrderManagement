@@ -138,13 +138,16 @@ public static void main(String[] args) {
     System.out.println("\nProcessing 4 food requests:");
 
     for (int i = 0; i < 4; i++) {
-        FoodRequest request = restaurantSystem.processFoodRequest();
+    FoodRequest request = restaurantSystem.processFoodRequest();
 
-        if (request != null) {
-            request.display();
-            System.out.println("--------------------");
-        }
+    if (request != null) {
+        request.display();
+
+        restaurantSystem.removeOrder(request.getOrderId());
+
+        System.out.println("--------------------");
     }
+}
 
     System.out.println("\nRemaining food requests:");
     restaurantSystem.displayFoodRequests();
@@ -169,10 +172,14 @@ public static void main(String[] args) {
 
     OrderSorter.sortByWaitingTime(orders);
 
-    for (int i = 0; i < orders.length; i++) {
-        orders[i].displayOrder();
-        System.out.println("--------------------");
-    }
+    Order[] activeOrders = restaurantSystem.getActiveOrders();
+
+OrderSorter.sortByWaitingTime(activeOrders);
+
+for (int i = 0; i < activeOrders.length; i++) {
+    activeOrders[i].displayOrder();
+    System.out.println("--------------------");
+}
 
     System.out.println("\nTotal integrated orders: "
             + restaurantSystem.getOrderCount());
