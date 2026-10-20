@@ -165,7 +165,7 @@ public static void main(String[] args) {
             + restaurantSystem.getCompletedOrderCount());
 
     // Sort orders by order time using Bubble Sort.
-    System.out.println("\nOrders sorted by order time:");
+    System.out.println("\nActive orders sorted by waiting time (oldest first):");
 
     OrderSorter.sortByWaitingTime(orders);
 
