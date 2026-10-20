@@ -1,0 +1,370 @@
+TASK 1: ORDER LIST
+
+Initial orders:
+Order ID: 101
+Customer: Ali
+Table: 1
+Number of items: 2
+Order time: 1000
+--------------------
+Order ID: 102
+Customer: Ayse
+Table: 2
+Number of items: 3
+Order time: 2000
+--------------------
+Order ID: 103
+Customer: Mehmet
+Table: 3
+Number of items: 1
+Order time: 3000
+--------------------
+Order ID: 104
+Customer: Zeynep
+Table: 4
+Number of items: 4
+Order time: 4000
+--------------------
+Order ID: 105
+Customer: Can
+Table: 5
+Number of items: 2
+Order time: 5000
+--------------------
+
+Removing order 103:
+Order removed: true
+
+Searching for order 104:
+Order ID: 104
+Customer: Zeynep
+Table: 4
+Number of items: 4
+Order time: 4000
+
+Final order list:
+Order ID: 101
+Customer: Ali
+Table: 1
+Number of items: 2
+Order time: 1000
+--------------------
+Order ID: 102
+Customer: Ayse
+Table: 2
+Number of items: 3
+Order time: 2000
+--------------------
+Order ID: 104
+Customer: Zeynep
+Table: 4
+Number of items: 4
+Order time: 4000
+--------------------
+Order ID: 105
+Customer: Can
+Table: 5
+Number of items: 2
+Order time: 5000
+--------------------
+Total active orders: 4
+
+
+TASK 2: FOOD REQUEST QUEUE
+
+Initial food request queue:
+Order ID: 201
+Food Request Count: 2
+Request Time: 1000
+--------------------
+Order ID: 202
+Food Request Count: 1
+Request Time: 2000
+--------------------
+Order ID: 203
+Food Request Count: 3
+Request Time: 3000
+--------------------
+Order ID: 204
+Food Request Count: 2
+Request Time: 4000
+--------------------
+Order ID: 205
+Food Request Count: 1
+Request Time: 5000
+--------------------
+Order ID: 206
+Food Request Count: 4
+Request Time: 6000
+--------------------
+Order ID: 207
+Food Request Count: 2
+Request Time: 7000
+--------------------
+Order ID: 208
+Food Request Count: 1
+Request Time: 8000
+--------------------
+
+Processing first 3 food requests:
+Processed request:
+Order ID: 201
+Food Request Count: 2
+Request Time: 1000
+--------------------
+Processed request:
+Order ID: 202
+Food Request Count: 1
+Request Time: 2000
+--------------------
+Processed request:
+Order ID: 203
+Food Request Count: 3
+Request Time: 3000
+--------------------
+
+Remaining food request queue:
+Order ID: 204
+Food Request Count: 2
+Request Time: 4000
+--------------------
+Order ID: 205
+Food Request Count: 1
+Request Time: 5000
+--------------------
+Order ID: 206
+Food Request Count: 4
+Request Time: 6000
+--------------------
+Order ID: 207
+Food Request Count: 2
+Request Time: 7000
+--------------------
+Order ID: 208
+Food Request Count: 1
+Request Time: 8000
+--------------------
+Remaining requests: 5
+
+
+TASK 3: COMPLETED ORDER STACK
+
+Initial completed order stack:
+Order ID: 305
+Customer: Can
+Completion Time: 13000
+--------------------
+Order ID: 304
+Customer: Zeynep
+Completion Time: 12000
+--------------------
+Order ID: 303
+Customer: Mehmet
+Completion Time: 11000
+--------------------
+Order ID: 302
+Customer: Ayse
+Completion Time: 10000
+--------------------
+Order ID: 301
+Customer: Ali
+Completion Time: 9000
+--------------------
+
+Most recent completed order (peek):
+Order ID: 305
+Customer: Can
+Completion Time: 13000
+
+Removing 2 records (pop):
+Popped record:
+Order ID: 305
+Customer: Can
+Completion Time: 13000
+--------------------
+Popped record:
+Order ID: 304
+Customer: Zeynep
+Completion Time: 12000
+--------------------
+
+Remaining completed order stack:
+Order ID: 303
+Customer: Mehmet
+Completion Time: 11000
+--------------------
+Order ID: 302
+Customer: Ayse
+Completion Time: 10000
+--------------------
+Order ID: 301
+Customer: Ali
+Completion Time: 9000
+--------------------
+Remaining records: 3
+
+
+TASK 4: RESTAURANT SYSTEM INTEGRATION
+
+Active Orders:
+Order ID: 401
+Customer: Ali
+Table: 1
+Number of items: 2
+Order time: 5000
+--------------------
+Order ID: 402
+Customer: Ayse
+Table: 2
+Number of items: 3
+Order time: 2000
+--------------------
+Order ID: 403
+Customer: Mehmet
+Table: 3
+Number of items: 1
+Order time: 7000
+--------------------
+Order ID: 404
+Customer: Zeynep
+Table: 4
+Number of items: 4
+Order time: 1000
+--------------------
+Order ID: 405
+Customer: Can
+Table: 5
+Number of items: 2
+Order time: 6000
+--------------------
+Order ID: 406
+Customer: Elif
+Table: 6
+Number of items: 3
+Order time: 3000
+--------------------
+Order ID: 407
+Customer: Ahmet
+Table: 7
+Number of items: 1
+Order time: 9000
+--------------------
+Order ID: 408
+Customer: Ece
+Table: 8
+Number of items: 2
+Order time: 4000
+--------------------
+Order ID: 409
+Customer: Mert
+Table: 9
+Number of items: 4
+Order time: 8000
+--------------------
+Order ID: 410
+Customer: Selin
+Table: 10
+Number of items: 1
+Order time: 1500
+--------------------
+
+Food Preparation Queue:
+Order ID: 401
+Food Request Count: 2
+Request Time: 1000
+--------------------
+Order ID: 402
+Food Request Count: 1
+Request Time: 2000
+--------------------
+Order ID: 403
+Food Request Count: 3
+Request Time: 3000
+--------------------
+Order ID: 404
+Food Request Count: 2
+Request Time: 4000
+--------------------
+Order ID: 405
+Food Request Count: 1
+Request Time: 5000
+--------------------
+
+Processing 4 food requests:
+Order ID: 401
+Food Request Count: 2
+Request Time: 1000
+--------------------
+Order ID: 402
+Food Request Count: 1
+Request Time: 2000
+--------------------
+Order ID: 403
+Food Request Count: 3
+Request Time: 3000
+--------------------
+Order ID: 404
+Food Request Count: 2
+Request Time: 4000
+--------------------
+
+Remaining food requests:
+
+Food Preparation Queue:
+Order ID: 405
+Food Request Count: 1
+Request Time: 5000
+--------------------
+Remaining requests: 1
+
+Completed Orders:
+Order ID: 402
+Customer: Ayse
+Completion Time: 12000
+--------------------
+Order ID: 401
+Customer: Ali
+Completion Time: 10000
+--------------------
+Completed records: 2
+
+Active orders sorted by waiting time (oldest first):
+Order ID: 410
+Customer: Selin
+Table: 10
+Number of items: 1
+Order time: 1500
+--------------------
+Order ID: 406
+Customer: Elif
+Table: 6
+Number of items: 3
+Order time: 3000
+--------------------
+Order ID: 408
+Customer: Ece
+Table: 8
+Number of items: 2
+Order time: 4000
+--------------------
+Order ID: 405
+Customer: Can
+Table: 5
+Number of items: 2
+Order time: 6000
+--------------------
+Order ID: 409
+Customer: Mert
+Table: 9
+Number of items: 4
+Order time: 8000
+--------------------
+Order ID: 407
+Customer: Ahmet
+Table: 7
+Number of items: 1
+Order time: 9000
+--------------------
+
+Total integrated orders: 6
+Integration completed successfully.
